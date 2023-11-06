@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Kufam:wght@400;500;600;700&family=Nunito+Sans:opsz,wght@6..12,200;6..12,400;6..12,700&display=swap");
+
+* {
+  /* font-family: "Kufam", sans-serif; */
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.nasr,
+.kelebihan h1,
+.paket h1,
+.paket .card p,
+strong,
+.airways h3,
+.fasilitas h1,
+.fasilitas .card-title,
+.testi h1,
+.gallery h1 {
+  font-family: "Kufam", sans-serif;
+}
+
+.kelebihan {
+  background-color: #f3fffe;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+}
+
+.paket {
+  padding-top: 3rem;
+  padding-bottom: 4.5rem;
+}
+
+.paket img {
+  border-radius: 10px;
+}
+
+.paket .pangkat {
+  font-size: 13px;
+  color: #ffc265;
+}
+
+.badge-card {
+  background-color: #c1fffa;
+  color: #1da599;
+}
+
+.font-nasr {
+  color: #1da599;
+}
+
+.airways p {
+  font-size: 20px;
+}
+
+.airways .star {
+  height: 15px;
+  width: 15px;
+}
+
+.airways .badge-star {
+  width: 110px;
+}
+
+.fasilitas {
+  background-color: #f3fffe;
+}
+
+.fasilitas .card img {
+  height: 36px;
+  width: 36px;
+}
+
+.fasilitas .card p {
+  font-size: 14px;
+}
+
+.modal-btn {
+  background-color: #1da599b2;
+  color: white;
+}
+
+.link-secondary,
+.text-secondary,
+.text-reset,
+.p-4,
+.p,
+.h6 {
+  color: white !important;
+}
+
+.scroll {
+  position: relative;
+  height: 150px;
+  overflow: auto;
+}
+
+/* CARD SLIDER */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  width: 100%;
+  padding-top: 20px;
+  text-align: center;
+}
+h2 {
+  font-family: sans-serif;
+  color: #fff;
+}
+.carousell {
+  width: 90%;
+  margin: 0px auto;
+}
+.slick-slide {
+  margin: 10px;
+}
+.slick-slide img {
+  width: 100%;
+}
+.slick-prev,
+.slick-next {
+  background: #000;
+  border-radius: 15px;
+  border-color: transparent;
+}
+.card {
+  border: 2px solid #fff;
+  box-shadow: 1px 1px 15px #ccc;
+}
+.card-body {
+  background: #fff;
+  width: 100%;
+  vertical-align: top;
+}
+.card-content {
+  text-align: left;
+  color: #333;
+  padding: 15px;
+}
+.card-text {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* SELECTED PAYMENT */
+.wadah {
+    width: 600px;
+    border-radius: 8px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+}
+
+.wadah form input{
+    display: none;
+}
+
+.wadah form .category{
+    margin-top: 10px;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+
+.category label{
+    /* width: 100%; */
+    /* height: 65px; */
+    height: 145px;
+    padding: 20px;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+}
+
+/* label:nth-child(2), label:nth-child(3){
+    margin: 15px 0;
+} */
+
+
+#visa:checked ~ .category .visaMethod,
+#mastercard:checked ~ .category .mastercardMethod,
+#paypal:checked ~ .category .paypalMethod,
+#AMEX:checked ~ .category .amexMethod{
+    box-shadow: 0px 0px 0px 1px #6064b6;
+}
+
+
+#visa:checked ~ .category .visaMethod .check,
+#mastercard:checked ~ .category .mastercardMethod .check,
+#paypal:checked ~ .category .paypalMethod .check,
+#AMEX:checked ~ .category .amexMethod .check{
+    display: block;
+}
+
+
+#kotak .imgName{
+    display: flex;
+    /* justify-content: space-between;
+     */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.imgName span{
+    /* margin-left: 20px; */
+    position: absolute;
+    top: 72%;
+    transform: translateY(-72%);
+    margin-top: 10px;
+}
+
+.imgName .imgContainer{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 35%;
+    transform: translateY(-35%);
+}
+
+.gambar {
+    width: 50px;
+    height: auto;
+}
+
+.visa img{
+    width: 80px;
+    /* margin-left: 5px; */
+}
+
+.mastercard img{
+    width: 65px;
+}
+
+.paypal img{
+    width: 80px;
+}
+
+.AMEX img{
+    width: 60px;
+}
+
+.check{
+    display: none;
+    position: absolute;
+    top: -4px;
+    right: -4px;
+}
+
+.check i{
+    font-size: 18px;
+}
+
+
+/* MARQUEE */
+:root {
+  --marquee-width: 80vw;
+  --marquee-height: 20vh;
+  /* --marquee-elements: 12; */ /* defined with JavaScript */
+  --marquee-elements-displayed: 5;
+  --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+  --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+}
+
+.marquee {
+  width: var(--marquee-width);
+  height: var(--marquee-height);
+  color: #eee;
+  overflow: hidden;
+  position: relative;
+  width: 52rem;
+}
+.marquee:before,
+.marquee:after {
+  position: absolute;
+  top: 0;
+  width: 10rem;
+  height: 100%;
+  content: "";
+  z-index: 1;
+}
+.marquee:before {
+  left: 0;
+}
+.marquee:after {
+  right: 0;
+}
+.marquee-content {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  animation: scrolling var(--marquee-animation-duration) linear infinite;
+}
+/* .marquee-content:hover {
+  animation-play-state: paused;
+} */
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements)));
+  }
+}
+.marquee-content li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  flex-shrink: 0;
+  width: var(--marquee-element-width);
+  max-height: 100%;
+  font-size: calc(var(--marquee-height) * 3 / 4); /* 5rem; */
+  white-space: nowrap;
+}
+
+.marquee-content img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: var(--marquee-element-width);
+  max-height: 100%;
+  font-size: calc(var(--marquee-height) * 3 / 4); /* 5rem; */
+  white-space: nowrap;
+}
+
+.marquee-content .garuda {
+  width: 17rem;
+  height: 5rem;
+}
+.marquee-content .lion {
+  width: 15rem;
+  height: 5rem;
+}
+.marquee-content .saudi {
+  width: 19rem;
+  height: 5rem;
+}
+.marquee-content .emirates {
+  width: 10rem;
+  height: 6rem;
+}
+.marquee-content .qatar {
+  width: 14rem;
+  height: 5rem;
+}
+
+.marquee-content li img {
+  width: 100%;
+  /* height: 100%; */
+  border: 2px solid #eee;
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+  :root {
+    --marquee-width: 100vw;
+    --marquee-height: 16vh;
+    --marquee-elements-displayed: 3;
+  }
+  .marquee:before,
+  .marquee:after {
+    width: 5rem;
+  }
+}
